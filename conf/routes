@@ -1,0 +1,24 @@
+#Get User Face
+    GET     /users/face/*user_id                controllers.ClusterController.getUserFace(user_id: String)
+#Get User Interaction
+    GET     /users/interacts/*obj/*subject      controllers.ClusterController.getUserInteraction(obj: String, subject: String)
+#Get User Groups
+    GET     /groups/users/*group/*user_id       controllers.ClusterController.getUserGroups(group: String, user_id: String, start_pos: Int?=0)
+#Get Post Face
+    GET     /posts/face/*post_id                controllers.ClusterController.getPostFace(post_id: String)
+#Get Post Interaction
+    GET     /posts/interacts/*post_id/*user_id  controllers.ClusterController.getPostInteraction(post_id:String, user_id: String)
+#Get Clique Face
+    GET     /cliques/face/*clique_id            controllers.ClusterController.getCliqueFace(clique_id: String)
+#Get Clique Interaction
+    GET     /cliques/interacts/*clique_id/*user_id   controllers.ClusterController.getCliqueInteraction(clique_id: String, user_id:String)
+#Get Cluster Interaction
+    GET     /clusters/interacts/*cluster_id/*user_id    controllers.ClusterController.getClusterInteraction(cluster_id: String, user_id:String)
+#Get Service Platform
+    GET     /user/primary_service/*user_id              controllers.ClusterController.getServicePlatform(user_id: String)
+#Get Track Id
+    GET     /services/convert/*song_id              controllers.ClusterController.getTrackId(song_id: String)
+#Get Comment
+    GET     /comments/get/*comment_id               controllers.ClusterController.getComment(comment_id: String)
+#Get Comment Replies
+    GET     /comments/replies/*comment_id           controllers.ClusterController.getCommentReplies(comment_id: String, start_pos: Int?=0)
